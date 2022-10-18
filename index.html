@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Simulation - ball movement</title>
+  <script src="./ball.js"></script>
+  <style>
+   header td {
+    list-style: none;
+    }
+
+    header td:hover, header td:active {
+    background-color: green;
+    color: purple;
+    cursor: pointer;
+    width:22px;
+}
+  </style>
+</head>
+
+<body>
+<h1 text-aligh="center"></h1>>  <!-- YOUR CODE STARTS HERE -->
+
+  
+  <header>
+    <table style="padding:5px;">
+        <tr><th colspan="3">Select Your Ball!</th>
+        </tr>
+        <tr>
+          <td><img src="beachBall.png"  onclick="show(0)" style="width:40px;height:40px;"></td>
+          <td><img src="soccerBall.png" onclick="show(1)" style="width:40px;height:40px;"></td>
+          <td><img src="tennisBall.png" onclick="show(2)" style="width:40px;height:40px;"></td>
+        </tr>
+    </table>
+  </header>
+  
+
+  <div id="ball"  style="z-index: 5;
+  position: absolute;
+  left: 100px;
+  bottom: 500%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image:url('tennisBall.png');  ">
+ </div>
+
+
+  <!-- YOUR CODE ENDS HERE -->
+</body>
+  
+
+
+<hr>
+<!-- DO NOT EDIT PAST THIS POINT -->
+<script src="./ball.js"></script>
+
+</html>
